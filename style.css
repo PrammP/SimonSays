@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+background-color: lightblue;
+}
+.console{
+    background-color: white;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    border: 15px solid gray;
+    border-radius: 5%;
+}
+.haut{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.ecran {
+    height: 150px;
+    width: 90%;
+    background-color: black;
+    border-radius: 5%;
+}
+
+#simon{
+    display: grid;
+    grid-template-areas:
+        'blue red yellow'
+        'green grey orange'
+        'cyan purple brown';
+    height: 300px;
+    width: 300px;
+    gap: 10px;
+    background-color: white;
+    border: white 10px solid;
+}
+
+#blue{
+    background-color: blue;
+    grid-area: blue;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+#red{
+    background-color: red;
+    grid-area: red;
+    border-radius: 5%;
+    border: 2px solid black;
+}
+#yellow{
+    background-color: yellow;
+    grid-area: yellow;
+    border-radius: 5%;
+    border: 2px solid black;
+}
+#lgreen{
+    background-color: lightgreen;
+    grid-area: green;
+    border-radius: 5%;
+    border: 2px solid black;
+}
+#grey{
+    background-color: grey;
+    grid-area: grey;
+    border-radius: 5%;
+    border: 2px solid black;
+}
+#orange{
+    background-color: orange;
+    grid-area: orange;
+    border-radius: 5%;
+    border: 2px solid black;
+}
+#green{
+    background-color: green;
+    grid-area: cyan;
+    border-radius: 5%;
+    border: 2px solid black;
+}
+#purple{
+    background-color: purple;
+    grid-area: purple;
+    border-radius: 5%;
+    border: 2px solid black;
+}
+#brown{
+    background-color: brown;
+    grid-area: brown;
+    border-radius: 5%;
+    border: 2px solid black;
+}
