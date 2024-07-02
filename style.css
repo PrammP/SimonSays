@@ -1,60 +1,63 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.container{
+.container {
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-background-color: lightblue;
+    background-color: lightblue;
 }
-#start{
+#start {
     margin-top: 2%;
     width: 300px;
     height: 100px;
     font-size: 30px;
-    border-radius:10px 10px 10px 10px ;
+    border-radius: 10px 10px 10px 10px;
 }
-.infos{
+.infos {
     display: none;
 }
-.console{
+button{
+    cursor: pointer;
+}
+.console {
     background-color: white;
     height: 70%;
     display: flex;
     flex-direction: column;
     border: 15px solid gray;
-    border-radius:10px 10px 10px 10px ;
-    -webkit-box-shadow: inset 0px 0px 5px 5px rgba(51,51,51,0.39); 
-    box-shadow: inset 0px 0px 5px 5px rgba(51,51,51,0.39);
+    border-radius: 10px 10px 10px 10px;
+    -webkit-box-shadow: inset 0px 0px 5px 5px rgba(51, 51, 51, 0.39);
+    box-shadow: inset 0px 0px 5px 5px rgba(51, 51, 51, 0.39);
 }
-.haut{
+.haut {
     height: 200px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#infos{
-    font-size: 22px ;
+#infos {
+    font-size: 22px;
     color: white;
 }
 .ecran {
     height: 150px;
     width: 90%;
     background-color: black;
-    border-radius:10px 10px 10px 10px ;
+    border-radius: 10px 10px 10px 10px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-left: 15px;
 }
 
-#simon{
+#simon {
     display: grid;
     grid-template-areas:
         'blue red yellow'
@@ -64,107 +67,77 @@ background-color: lightblue;
     width: 300px;
     gap: 10px;
     padding: 10px;
-    
 }
-#blue.activated{
+
+#blue.activated,
+#red.activated,
+#yellow.activated,
+#lgreen.activated,
+#grey.activated,
+#orange.activated,
+#green.activated,
+#purple.activated,
+#brown.activated {
     transform: translateY(5px);
 }
-#red.activated{
-    transform: translateY(5px);
+
+#blue,
+#red,
+#yellow,
+#lgreen,
+#grey,
+#orange,
+#green,
+#purple,
+#brown {
+    border-radius: 5%;
+    border: 2px solid black;
+    -webkit-box-shadow: inset 0px 0px 5px 5px rgba(51, 51, 51, 0.39);
+    box-shadow: inset 0px 0px 5px 5px rgba(51, 51, 51, 0.39);
+    cursor: pointer; /* Add this line */
 }
-#yellow.activated{
-    transform: translateY(5px);
-}
-#lgreen.activated{
-    transform: translateY(5px);
-}
-#grey.activated{
-    transform: translateY(5px);
-}
-#orange.activated{
-    transform: translateY(5px);
-}
-#green.activated{
-    transform: translateY(5px);
-}
-#purple.activated{
-    transform: translateY(5px);
-}
-#brown.activated{
-    transform: translateY(5px);
-}
-#blue{
+
+#blue {
     background-color: blue;
     grid-area: blue;
-    border-radius: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid black;
-    -webkit-box-shadow: inset 0px 0px 5px 5px rgba(51,51,51,0.39); 
-    box-shadow: inset 0px 0px 5px 5px rgba(51,51,51,0.39);
 }
-#red{
+
+#red {
     background-color: red;
     grid-area: red;
-    border-radius: 5%;
-    border: 2px solid black;
-    -webkit-box-shadow: inset 0px 0px 5px 5px rgba(51,51,51,0.39); 
-    box-shadow: inset 0px 0px 5px 5px rgba(51,51,51,0.39);
 }
-#yellow{
+
+#yellow {
     background-color: yellow;
     grid-area: yellow;
-    border-radius: 5%;
-    border: 2px solid black;
-    -webkit-box-shadow: inset 0px 0px 5px 5px rgba(51,51,51,0.39); 
-    box-shadow: inset 0px 0px 5px 5px rgba(51,51,51,0.39);
 }
-#lgreen{
+
+#lgreen {
     background-color: lightgreen;
     grid-area: green;
-    border-radius: 5%;
-    border: 2px solid black;
-    -webkit-box-shadow: inset 0px 0px 5px 5px rgba(51,51,51,0.39); 
-    box-shadow: inset 0px 0px 5px 5px rgba(51,51,51,0.39);
 }
-#grey{
+
+#grey {
     background-color: grey;
     grid-area: grey;
-    border-radius: 5%;
-    border: 2px solid black;
-    -webkit-box-shadow: inset 0px 0px 5px 5px rgba(51,51,51,0.39); 
-    box-shadow: inset 0px 0px 5px 5px rgba(51,51,51,0.39);
 }
-#orange{
+
+#orange {
     background-color: orange;
     grid-area: orange;
-    border-radius: 5%;
-    border: 2px solid black;
-    -webkit-box-shadow: inset 0px 0px 5px 5px rgba(51,51,51,0.39); 
-    box-shadow: inset 0px 0px 5px 5px rgba(51,51,51,0.39);
 }
-#green{
+
+#green {
     background-color: green;
     grid-area: cyan;
-    border-radius: 5%;
-    border: 2px solid black;
-    -webkit-box-shadow: inset 0px 0px 5px 5px rgba(51,51,51,0.39); 
-    box-shadow: inset 0px 0px 5px 5px rgba(51,51,51,0.39);
 }
-#purple{
+
+#purple {
     background-color: purple;
     grid-area: purple;
-    border-radius: 5%;
-    border: 2px solid black;
-    -webkit-box-shadow: inset 0px 0px 5px 5px rgba(51,51,51,0.39); 
-    box-shadow: inset 0px 0px 5px 5px rgba(51,51,51,0.39);
 }
-#brown{
+
+#brown {
     background-color: brown;
     grid-area: brown;
-    border-radius: 5%;
-    border: 2px solid black;
-    -webkit-box-shadow: inset 0px 0px 5px 5px rgba(51,51,51,0.39); 
-    box-shadow: inset 0px 0px 5px 5px rgba(51,51,51,0.39);
 }
