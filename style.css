@@ -66,6 +66,9 @@ background-color: lightblue;
     padding: 10px;
     
 }
+#blue.activated{
+    transform: translateY(10px);
+}
 
 #blue{
     background-color: blue;
