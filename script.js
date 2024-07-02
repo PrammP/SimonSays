@@ -1,5 +1,8 @@
 const start = document.getElementById("start");
 var info = document.getElementById("infos");
+let sequence = [];
+let sequenceJoueur = [];
+let points = 0;
 
 function startGame() {
   start.style.display = "none";
@@ -7,21 +10,22 @@ function startGame() {
   info.textContent = points;
 }
 
-let points = 0;
-
 function nextStep() {
-  const colors = [
-    "blue",
-    "red",
-    "yellow",
-    "lgreen",
-    "grey",
-    "orange",
-    "green",
-    "purple",
-    "brown",
-  ];
-  const random = colors[Math.floor(Math.random() * colors.length)];
+  const random = Math.floor(Math.random() * 9);
 
   return random;
 }
+
+function Active(number) {
+  const colors = document.querySelector(`[data-color='${number}']`);
+  colors.classList.add("activated");
+
+  setTimeout(() => {
+    colors.classList.remove("activated");
+  }, 300);
+}
+
+sequence.push(nextStep());
+console.log(sequence);
+
+Active(nextStep());

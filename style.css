@@ -67,9 +67,32 @@ background-color: lightblue;
     
 }
 #blue.activated{
-    transform: translateY(10px);
+    transform: translateY(5px);
 }
-
+#red.activated{
+    transform: translateY(5px);
+}
+#yellow.activated{
+    transform: translateY(5px);
+}
+#lgreen.activated{
+    transform: translateY(5px);
+}
+#grey.activated{
+    transform: translateY(5px);
+}
+#orange.activated{
+    transform: translateY(5px);
+}
+#green.activated{
+    transform: translateY(5px);
+}
+#purple.activated{
+    transform: translateY(5px);
+}
+#brown.activated{
+    transform: translateY(5px);
+}
 #blue{
     background-color: blue;
     grid-area: blue;
