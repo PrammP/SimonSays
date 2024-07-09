@@ -61,7 +61,7 @@ function onColorClick(event) {
     playerSequence[playerSequence.length - 1] !==
     sequence[playerSequence.length - 1]
   ) {
-    alert("T'ES NUL");
+    alert("WRONG !");
     start.style.display = "block";
     start.style.display = "none";
     return;
